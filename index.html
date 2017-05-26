@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Encuéntrame | Ruth Salvador</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
+    <div id="encuentrame-container" >
+      <div class="container-fluid">
+        <form class="row">
+          <div class="col-md-4">
+            <label for="start"><span class="glyphicon glyphicon-record"></span></label>
+            <input type="text" class="form-control" id="start" placeholder="Ingresa tu puento de partida">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="destiny"><span class="glyphicon glyphicon-send"></span></label>
+            <input type="text" class="form-control" id="destiny" placeholder="Ingresa tu destino">
+          </div>
+          <div class="form-group col-md-2">
+            <button id="ruta" type="button" class="btn btn-default"><strong>Trazar ruta</strong></button>
+          </div>
+          <div class="form-group col-md-2">
+            <button id="encuentrame" type="button" class="btn btn-default"><strong>Encuéntrame</strong></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <div id="map"></div>
-    <div id="encuentrame">Encuéntrame</div>
-
-
+    <div id="tarifa" class="hide"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUlxPkhbkj53y_Yyle92FQ8Uq8wl_pVGc&callback=initMap&libraries=places" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUlxPkhbkj53y_Yyle92FQ8Uq8wl_pVGc&callback=initMap" type="text/javascript"></script>
   </body>
 </html>

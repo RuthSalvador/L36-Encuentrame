@@ -3,10 +3,27 @@
   height: 90vh;
 }
 
-#encuentrame {
-  background-color: #ebd332;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
+#encuentrame-container {
+  background-color: #f7b617;
+  color: #ffffff;
+}
+
+#start, #destiny {
+  border: 1px solid #ffffff;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  color: #ffffff;
+
+}
+
+#start::placeholder, #destiny::placeholder  {
+  color: #ffffff;
+}
+
+#tarifa {
+  background-color: #f7b617;
+  color: #7a7a7a;
+  width: 150px;
+  height: 150px;
 }
